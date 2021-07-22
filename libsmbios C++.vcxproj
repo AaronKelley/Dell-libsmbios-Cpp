@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cmos\CmosRW.cpp" />
+    <ClCompile Include="cmos\CmosRWFactory.cpp" />
+    <ClCompile Include="cmos\CmosRW_LinuxIO.cpp" />
+    <ClCompile Include="cmos\CmosRW_SolarisIO.cpp" />
+    <ClCompile Include="cmos\CmosRW_WindowsIO.cpp" />
+    <ClCompile Include="common\ascii2enUS_scancode.cpp" />
+    <ClCompile Include="common\Observer.cpp" />
+    <ClCompile Include="memory\Memory.cpp" />
+    <ClCompile Include="memory\Memory_Linux.cpp" />
+    <ClCompile Include="memory\Memory_Windows.cpp" />
+    <ClCompile Include="smbios\SmbiosBaseFactory.cpp" />
+    <ClCompile Include="smbios\SmbiosFactory.cpp" />
+    <ClCompile Include="smbios\SmbiosItem.cpp" />
+    <ClCompile Include="smbios\SmbiosStrategy.cpp" />
+    <ClCompile Include="smbios\SmbiosStrategy_Linux.cpp" />
+    <ClCompile Include="smbios\SmbiosStrategy_Solaris.cpp" />
+    <ClCompile Include="smbios\SmbiosStrategy_Windows.cpp" />
+    <ClCompile Include="smbios\SmbiosTable.cpp" />
+    <ClCompile Include="smbios\SmbiosTableIterator.cpp" />
+    <ClCompile Include="smbios\SmbiosWorkaround.cpp" />
+    <ClCompile Include="smi\Smi.cpp" />
+    <ClCompile Include="smi\SmiFactory.cpp" />
+    <ClCompile Include="smi\Smi_Linux.cpp" />
+    <ClCompile Include="smi\Smi_Windows.cpp" />
+    <ClCompile Include="systeminfo\IdByte.cpp" />
+    <ClCompile Include="systeminfo\SysInfoError.cpp" />
+    <ClCompile Include="systeminfo\System.cpp" />
+    <ClCompile Include="systeminfo\SystemDetect.cpp" />
+    <ClCompile Include="token\checksum.cpp" />
+    <ClCompile Include="token\Token.cpp" />
+    <ClCompile Include="token\TokenD4.cpp" />
+    <ClCompile Include="token\TokenD5.cpp" />
+    <ClCompile Include="token\TokenD6.cpp" />
+    <ClCompile Include="token\TokenDA.cpp" />
+    <ClCompile Include="token\TokenTable.cpp" />
+    <ClCompile Include="token\TokenTableFactory.cpp" />
+    <ClCompile Include="token\TokenTableIterator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\CmosRWImpl.h" />
+    <ClInclude Include="common\ExceptionImpl.h" />
+    <ClInclude Include="common\FactoryImpl2.h" />
+    <ClInclude Include="common\miniddk.h" />
+    <ClInclude Include="common\SmbiosImpl.h" />
+    <ClInclude Include="common\SmbiosWorkaroundImpl.h" />
+    <ClInclude Include="common\TokenImpl.h" />
+    <ClInclude Include="common\TokenLowLevel.h" />
+    <ClInclude Include="include\smbios\compat.h" />
+    <ClInclude Include="include\smbios\config.hpp" />
+    <ClInclude Include="include\smbios\config\abi\msvc_prefix.hpp" />
+    <ClInclude Include="include\smbios\config\abi\msvc_suffix.hpp" />
+    <ClInclude Include="include\smbios\config\abi_prefix.hpp" />
+    <ClInclude Include="include\smbios\config\abi_suffix.hpp" />
+    <ClInclude Include="include\smbios\config\auto_link.hpp" />
+    <ClInclude Include="include\smbios\config\compiler\gcc.hpp" />
+    <ClInclude Include="include\smbios\config\compiler\sunpro_cc.hpp" />
+    <ClInclude Include="include\smbios\config\compiler\visualc.hpp" />
+    <ClInclude Include="include\smbios\config\platform\linux.hpp" />
+    <ClInclude Include="include\smbios\config\platform\win32.hpp" />
+    <ClInclude Include="include\smbios\config\platform\win64.hpp" />
+    <ClInclude Include="include\smbios\config\posix_features.hpp" />
+    <ClInclude Include="include\smbios\config\select_compiler_config.hpp" />
+    <ClInclude Include="include\smbios\config\select_platform_config.hpp" />
+    <ClInclude Include="include\smbios\config\select_stdlib_config.hpp" />
+    <ClInclude Include="include\smbios\config\suffix.hpp" />
+    <ClInclude Include="include\smbios\config\user.hpp" />
+    <ClInclude Include="include\smbios\ICmosRW.h" />
+    <ClInclude Include="include\smbios\IException.h" />
+    <ClInclude Include="include\smbios\IFactory.h" />
+    <ClInclude Include="include\smbios\IMemory.h" />
+    <ClInclude Include="include\smbios\IObserver.h" />
+    <ClInclude Include="include\smbios\ISmbios.h" />
+    <ClInclude Include="include\smbios\ISmi.h" />
+    <ClInclude Include="include\smbios\IToken.h" />
+    <ClInclude Include="include\smbios\message.h" />
+    <ClInclude Include="include\smbios\SmbiosDefs.h" />
+    <ClInclude Include="include\smbios\SmbiosLowLevel.h" />
+    <ClInclude Include="include\smbios\SystemInfo.h" />
+    <ClInclude Include="include\smbios\types.h" />
+    <ClInclude Include="include\smbios\version.h" />
+    <ClInclude Include="memory\MemoryImpl.h" />
+    <ClInclude Include="smbios\StdWorkarounds.h" />
+    <ClInclude Include="smi\SmiImpl.h" />
+    <ClInclude Include="smi\SmiLowLevel.h" />
+    <ClInclude Include="systeminfo\DellMagic.h" />
+    <ClInclude Include="systeminfo\SystemDetect.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{37b63bca-ab12-4fc5-97c7-daf5534cc9cb}</ProjectGuid>
+    <RootNamespace>libsmbiosC</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)common;$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)common;$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\cmos">
+      <UniqueIdentifier>{5d7abbf6-1d9e-41ce-9c27-a295446f9bcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{2a2851bb-c7e8-449e-b5d6-6f05622a0f29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common">
+      <UniqueIdentifier>{5e64708b-ab21-43d5-9348-fc56cd70a50e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\memory">
+      <UniqueIdentifier>{bc9e2d0d-925f-4b32-98c0-f55fb7d241e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\memory">
+      <UniqueIdentifier>{4e6239dd-6c1b-4d01-81b6-ec0386a14f54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\smbios">
+      <UniqueIdentifier>{b928f6c6-db4e-421d-b683-1cca9095e7ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\smbios">
+      <UniqueIdentifier>{748d172d-24f3-407d-8360-172f53dfef7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\smi">
+      <UniqueIdentifier>{8b515d98-09e2-425d-bc85-74e6ef2bf903}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\smi">
+      <UniqueIdentifier>{6cefeeeb-31c7-4e17-aa3c-7d6ff6a17e44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\systeminfo">
+      <UniqueIdentifier>{bfc44100-6acf-4c94-b7f3-4ef0bdbcbafc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\systeminfo">
+      <UniqueIdentifier>{546213b7-c727-40dc-a9d7-a2cf1ba3f39a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\token">
+      <UniqueIdentifier>{a1b86a76-663c-4f59-8850-8c2511605a6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{cf25ce4b-bbb4-4406-9f94-8e5eefb4d173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\smbios">
+      <UniqueIdentifier>{eb2e671b-9fd7-47f2-b79d-5e9ca3b73d19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\smbios\config">
+      <UniqueIdentifier>{5109d6e4-f281-462f-8e03-bd4d9b42e2b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\smbios\config\compiler">
+      <UniqueIdentifier>{33c00f03-2b37-4ed5-abed-6d3221a81864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\smbios\config\platform">
+      <UniqueIdentifier>{44e1cb43-1c95-4fef-8994-ed0c922ecc52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\smbios\config\abi">
+      <UniqueIdentifier>{e1e9887a-39aa-432a-8b88-3d03f886ddf9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cmos\CmosRW.cpp">
+      <Filter>Source Files\cmos</Filter>
+    </ClCompile>
+    <ClCompile Include="cmos\CmosRW_LinuxIO.cpp">
+      <Filter>Source Files\cmos</Filter>
+    </ClCompile>
+    <ClCompile Include="cmos\CmosRW_SolarisIO.cpp">
+      <Filter>Source Files\cmos</Filter>
+    </ClCompile>
+    <ClCompile Include="cmos\CmosRW_WindowsIO.cpp">
+      <Filter>Source Files\cmos</Filter>
+    </ClCompile>
+    <ClCompile Include="cmos\CmosRWFactory.cpp">
+      <Filter>Source Files\cmos</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ascii2enUS_scancode.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\Observer.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\Memory.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\Memory_Linux.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\Memory_Windows.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="smbios\SmbiosBaseFactory.cpp">
+      <Filter>Source Files\smbios</Filter>
+    </ClCompile>
+    <ClCompile Include="smbios\SmbiosFactory.cpp">
+      <Filter>Source Files\smbios</Filter>
+    </ClCompile>
+    <ClCompile Include="smbios\SmbiosItem.cpp">
+      <Filter>Source Files\smbios</Filter>
+    </ClCompile>
+    <ClCompile Include="smbios\SmbiosStrategy.cpp">
+      <Filter>Source Files\smbios</Filter>
+    </ClCompile>
+    <ClCompile Include="smbios\SmbiosStrategy_Linux.cpp">
+      <Filter>Source Files\smbios</Filter>
+    </ClCompile>
+    <ClCompile Include="smbios\SmbiosStrategy_Solaris.cpp">
+      <Filter>Source Files\smbios</Filter>
+    </ClCompile>
+    <ClCompile Include="smbios\SmbiosStrategy_Windows.cpp">
+      <Filter>Source Files\smbios</Filter>
+    </ClCompile>
+    <ClCompile Include="smbios\SmbiosTable.cpp">
+      <Filter>Source Files\smbios</Filter>
+    </ClCompile>
+    <ClCompile Include="smbios\SmbiosTableIterator.cpp">
+      <Filter>Source Files\smbios</Filter>
+    </ClCompile>
+    <ClCompile Include="smbios\SmbiosWorkaround.cpp">
+      <Filter>Source Files\smbios</Filter>
+    </ClCompile>
+    <ClCompile Include="smi\Smi.cpp">
+      <Filter>Source Files\smi</Filter>
+    </ClCompile>
+    <ClCompile Include="smi\Smi_Linux.cpp">
+      <Filter>Source Files\smi</Filter>
+    </ClCompile>
+    <ClCompile Include="smi\Smi_Windows.cpp">
+      <Filter>Source Files\smi</Filter>
+    </ClCompile>
+    <ClCompile Include="smi\SmiFactory.cpp">
+      <Filter>Source Files\smi</Filter>
+    </ClCompile>
+    <ClCompile Include="systeminfo\IdByte.cpp">
+      <Filter>Source Files\systeminfo</Filter>
+    </ClCompile>
+    <ClCompile Include="systeminfo\SysInfoError.cpp">
+      <Filter>Source Files\systeminfo</Filter>
+    </ClCompile>
+    <ClCompile Include="systeminfo\System.cpp">
+      <Filter>Source Files\systeminfo</Filter>
+    </ClCompile>
+    <ClCompile Include="systeminfo\SystemDetect.cpp">
+      <Filter>Source Files\systeminfo</Filter>
+    </ClCompile>
+    <ClCompile Include="token\checksum.cpp">
+      <Filter>Source Files\token</Filter>
+    </ClCompile>
+    <ClCompile Include="token\Token.cpp">
+      <Filter>Source Files\token</Filter>
+    </ClCompile>
+    <ClCompile Include="token\TokenD4.cpp">
+      <Filter>Source Files\token</Filter>
+    </ClCompile>
+    <ClCompile Include="token\TokenD5.cpp">
+      <Filter>Source Files\token</Filter>
+    </ClCompile>
+    <ClCompile Include="token\TokenD6.cpp">
+      <Filter>Source Files\token</Filter>
+    </ClCompile>
+    <ClCompile Include="token\TokenDA.cpp">
+      <Filter>Source Files\token</Filter>
+    </ClCompile>
+    <ClCompile Include="token\TokenTable.cpp">
+      <Filter>Source Files\token</Filter>
+    </ClCompile>
+    <ClCompile Include="token\TokenTableFactory.cpp">
+      <Filter>Source Files\token</Filter>
+    </ClCompile>
+    <ClCompile Include="token\TokenTableIterator.cpp">
+      <Filter>Source Files\token</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\CmosRWImpl.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ExceptionImpl.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\FactoryImpl2.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\miniddk.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SmbiosImpl.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SmbiosWorkaroundImpl.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\TokenImpl.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\TokenLowLevel.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="memory\MemoryImpl.h">
+      <Filter>Header Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="smbios\StdWorkarounds.h">
+      <Filter>Header Files\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="smi\SmiImpl.h">
+      <Filter>Header Files\smi</Filter>
+    </ClInclude>
+    <ClInclude Include="smi\SmiLowLevel.h">
+      <Filter>Header Files\smi</Filter>
+    </ClInclude>
+    <ClInclude Include="systeminfo\DellMagic.h">
+      <Filter>Header Files\systeminfo</Filter>
+    </ClInclude>
+    <ClInclude Include="systeminfo\SystemDetect.h">
+      <Filter>Header Files\systeminfo</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\compat.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config.hpp">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\auto_link.hpp">
+      <Filter>Header Files\include\smbios\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\user.hpp">
+      <Filter>Header Files\include\smbios\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\select_compiler_config.hpp">
+      <Filter>Header Files\include\smbios\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\select_platform_config.hpp">
+      <Filter>Header Files\include\smbios\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\select_stdlib_config.hpp">
+      <Filter>Header Files\include\smbios\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\suffix.hpp">
+      <Filter>Header Files\include\smbios\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\ICmosRW.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\IException.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\IFactory.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\IMemory.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\IObserver.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\ISmbios.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\ISmi.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\IToken.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\message.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\SmbiosDefs.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\SmbiosLowLevel.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\SystemInfo.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\types.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\version.h">
+      <Filter>Header Files\include\smbios</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\abi_prefix.hpp">
+      <Filter>Header Files\include\smbios\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\abi_suffix.hpp">
+      <Filter>Header Files\include\smbios\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\posix_features.hpp">
+      <Filter>Header Files\include\smbios\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\compiler\gcc.hpp">
+      <Filter>Header Files\include\smbios\config\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\compiler\sunpro_cc.hpp">
+      <Filter>Header Files\include\smbios\config\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\compiler\visualc.hpp">
+      <Filter>Header Files\include\smbios\config\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\platform\linux.hpp">
+      <Filter>Header Files\include\smbios\config\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\platform\win32.hpp">
+      <Filter>Header Files\include\smbios\config\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\platform\win64.hpp">
+      <Filter>Header Files\include\smbios\config\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\abi\msvc_prefix.hpp">
+      <Filter>Header Files\include\smbios\config\abi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smbios\config\abi\msvc_suffix.hpp">
+      <Filter>Header Files\include\smbios\config\abi</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

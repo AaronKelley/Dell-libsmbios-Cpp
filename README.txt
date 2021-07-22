@@ -1,0 +1,1 @@
+This is the last version of the Dell libsmbios C++ library, set up as a Visual C++ project.  For exploration purposes only; it does not compile.
